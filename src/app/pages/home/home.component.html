@@ -1,0 +1,38 @@
+
+<main>
+    <section class="welcome">
+        <hr>
+        <h1 class="title">WELCOME!</h1>
+    </section>
+    <section class="container">
+      <div class="firstShow"><h2>check out the hottest currencies of the moment
+      </h2></div>
+      
+      <div class="secondShow">
+        <h2 style="font-size: 40pt;">HOT</h2>
+        <h2 style="font-size: 15pt;">Crypto</h2>
+        <h2 style="font-size: 10pt;">Last minute changes</h2>
+        <div class="containerCoins">
+            <div class="coins">
+                <div *ngFor="let coin of coins | slice:0:3" class="coin">
+                  <h3 class="coinName">{{ coin.name }} ({{ coin.symbol }})</h3>
+                  <p>Price: {{ coin.price_usd | currency: 'USD' }}</p>
+                  <p>Change: {{ coin.percent_change_1h }}%</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="more" *ngIf="canshow">
+          <p (click)="pesquisar()">More</p>
+        </div>
+
+        <div class="more" *ngIf="!canshow">
+          <p class="inputPesquisa" routerLink="/saiba-mais">More Informations</p>
+        </div>
+       
+    
+          
+    </div>
+    </section>
+
+</main>
