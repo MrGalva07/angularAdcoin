@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 import { CoinComponent } from './pages/coin/coin.component';
 import { FormsModule } from '@angular/forms';
 import { SaibaMaisComponent } from './pages/saiba-mais/saiba-mais.component';
-import { LoginComponent } from './pages/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { LoginComponent } from './pages/login/login.component';
     HomeComponent,
     CoinComponent,
     SaibaMaisComponent,
-    LoginComponent
+
   ],
   imports: [
     BrowserModule,

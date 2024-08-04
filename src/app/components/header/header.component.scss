@@ -4,13 +4,19 @@ header {
   align-items: center;
   background-color: #282828;
   color: #dad901;
-  height: 80px;
+  height: 40px;
+
+
+  h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin-right: 1000px;
+  }
+
+ 
+  
 }
 
-h1 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 18px;
-}
 
 nav {
   display: flex;
